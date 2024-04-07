@@ -30,11 +30,11 @@ const PersonajeDetail = () => {
 
 
   return (
-    <div className=' flex justify-center items-center'>
+    <div className=' flex justify-center items-center w-full'>
       {character && (
           <div>
               <img src={character.image} alt={character.name} className='h-[300px] rounded-full mx-auto d-block'/>  
-            <div className='grid grid-cols-3 items-center justify-center gap-7 text-center pt-14'>
+            <div className='grid grid-cols-3 items-center justify-center gap-7 text-center pt-14 '>
               {info.map((episode, id) => (
                 <div key={id} className=' border-2 rounded-2xl shadow-xl italic'>
                     <h2 className='text-red-500 pb-3'>Episodio {episode.id}</h2>
