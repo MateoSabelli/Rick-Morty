@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 
 const PersonajeDetail = () => {
   const { id } = useParams()
-
-
   const [character, setCharacter] = useState("")
 
   useEffect(() => {
@@ -32,7 +30,7 @@ const PersonajeDetail = () => {
   return (
     <div className=' flex justify-center items-center w-full'>
       {character && (
-          <div>
+        <div>
               <img src={character.image} alt={character.name} className='h-[300px] rounded-full mx-auto d-block'/>  
             <div className='grid grid-cols-3 items-center justify-center gap-7 text-center pt-14 '>
               {info.map((episode, id) => (
