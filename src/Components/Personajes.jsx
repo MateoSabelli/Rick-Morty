@@ -32,7 +32,7 @@ const Personajes = () => {
             </select>
         </div>
         
-        <div className='grid grid-cols-2 gap-8 pt-20 italic text-base'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 pt-20 italic text-base'>
             {
                 character
                 .filter(character => species === "" ? true : character.species === species)
