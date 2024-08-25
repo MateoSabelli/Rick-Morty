@@ -13,6 +13,7 @@ function App() {
       <Route path="/personajes" element={<Personajes />} />
       <Route path='/PersonajeDetail/:id' element={<PersonajeDetail/>}/>
       </Routes>  
+
   )
 }
 

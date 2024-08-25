@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
-const 
-Personajes = () => {
+const Personajes = () => {
 
     /* Creamos un Hook para la Api */
     const [character, setcharacter] = useState([])
